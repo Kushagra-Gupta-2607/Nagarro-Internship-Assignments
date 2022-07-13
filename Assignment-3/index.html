@@ -3,27 +3,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Assignment-3</h1>
 
-    <h2 style="color: purple;">To-Do-List</h2>
 
-    <ul>
-        <li>1. Waking up at 7 am.</li>
-        <li>2. Gym from 8 till 9.</li>
-        <li>3. Drink juice and have heavy breakfast.</li>
-        <li>4. Study till 2 pm.</li>
-        <li>5. Have lunch.</li>
-        <li>6. Watch a movie.</li>
-        <li>7. Study from 4 till 8.</li>
-        <li>8. Have dinner.</li>
-        <li>9. Sleep.</li>
-    </ul>
+    <div id="myDIV" class="header">
+        <h2 style="color: purple;">To-Do-List</h2>
+        <input type="text" id="myInput" placeholder="What event do you want to complete?">
+        <span onclick="eventAddition()" class="addBtn">Add</span>
+    </div>
 
-    <button>add event</button>
-    <button>remove event</button>
+    <div id="items">
+        <ul id="myUL">
+            <li>Waking up at 7 am.</li>
+            <li>Gym from 8 till 9.</li>
+            <li>Drink juice and have heavy breakfast.</li>
+            <li>Study till 2 pm.</li>
+            <li>Have lunch.</li>
+            <li>Watch a movie.</li>
+            <li>Study from 4 till 8.</li>
+            <li>Have dinner.</li>
+            <li>Sleep.</li>
+        </ul>
+    </div>
+        
+
     
     <script src="app.js"></script>
 </body>
